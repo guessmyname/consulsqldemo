@@ -118,3 +118,17 @@ alive: consul1 172.20.20.10:8301
 clock: 1
 leave
 clock: 2
+alive: DRFJMFW1032235 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 1
+leave
+clock: 2
+alive: DRFJMFW1032235 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 3
+leave
+clock: 4
+alive: DRFJMFW1032235 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 5
+event-clock: 1

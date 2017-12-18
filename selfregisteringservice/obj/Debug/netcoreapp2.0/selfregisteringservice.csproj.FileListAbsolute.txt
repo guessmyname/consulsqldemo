@@ -1,0 +1,10 @@
+c:\code\consulsqldemo\selfregisteringservice\obj\Debug\netcoreapp2.0\selfregisteringservice.csproj.CoreCompileInputs.cache
+c:\code\consulsqldemo\selfregisteringservice\obj\Debug\netcoreapp2.0\selfregisteringservice.AssemblyInfoInputs.cache
+c:\code\consulsqldemo\selfregisteringservice\obj\Debug\netcoreapp2.0\selfregisteringservice.AssemblyInfo.cs
+c:\code\consulsqldemo\selfregisteringservice\bin\Debug\netcoreapp2.0\selfregisteringservice.deps.json
+c:\code\consulsqldemo\selfregisteringservice\bin\Debug\netcoreapp2.0\selfregisteringservice.runtimeconfig.json
+c:\code\consulsqldemo\selfregisteringservice\bin\Debug\netcoreapp2.0\selfregisteringservice.runtimeconfig.dev.json
+c:\code\consulsqldemo\selfregisteringservice\bin\Debug\netcoreapp2.0\selfregisteringservice.dll
+c:\code\consulsqldemo\selfregisteringservice\bin\Debug\netcoreapp2.0\selfregisteringservice.pdb
+c:\code\consulsqldemo\selfregisteringservice\obj\Debug\netcoreapp2.0\selfregisteringservice.dll
+c:\code\consulsqldemo\selfregisteringservice\obj\Debug\netcoreapp2.0\selfregisteringservice.pdb

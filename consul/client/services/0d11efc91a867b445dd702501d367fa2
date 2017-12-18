@@ -1,1 +1,1 @@
-{"Token":"","Service":{"ID":"vault:127.0.0.1:8200","Service":"vault","Tags":["standby"],"Address":"127.0.0.1","Port":8200,"EnableTagOverride":false,"CreateIndex":0,"ModifyIndex":0}}
+{"Token":"","Service":{"ID":"vault:127.0.0.1:8200","Service":"vault","Tags":["active"],"Address":"127.0.0.1","Port":8200,"EnableTagOverride":false,"CreateIndex":0,"ModifyIndex":0}}
