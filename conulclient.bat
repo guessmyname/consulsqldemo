@@ -1,0 +1,1 @@
+.\consul\consul agent -join=172.20.20.10 -data-dir=.\consul\client -bind=172.20.20.1

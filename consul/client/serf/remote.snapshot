@@ -1,0 +1,3 @@
+alive: BKAO-PC.dc1 127.0.0.1:8302
+alive: consul-server.dc1 192.168.99.100:8302
+clock: 1

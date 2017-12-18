@@ -1,0 +1,19 @@
+REM init database to use single secret
+curl -X PUT -d "{\"secret_shares\":1, \"secret_threshold\":1}"  http://127.0.0.1:8200/v1/sys/init
+REM set VAULT_TOKEN=
+
+REM unseals DB for configuration
+curl -X PUT -d "{\"key\": \"w5vkm+jGqGfEBVszPtpwD1fuyscFYmGwzfLtoLSbHqE=\"}"    http://127.0.0.1:8200/v1/sys/unseal
+
+REM Mounts databse backend
+vault mount database
+
+REM Sets database that is being configured with roles allowed
+vault write database/config/mssql    plugin_name=mssql-database-plugin    connection_url="server=127.0.0.1\SQLEXPRESS;port=1433;user id=sa;password=Password!;database=CapDemo;app name=vault;"  allowed_roles="readonly"
+
+REM Sets SQL to create login
+vault write database/roles/readonly    db_name=mssql  creation_statements="CREATE LOGIN [{{name}}] WITH PASSWORD = '{{password}}';  CREATE USER [{{name}}] FOR LOGIN [{{name}}];  GRANT SELECT ON SCHEMA::dbo TO [{{name}}];"    default_ttl="1m"     max_ttl="24h"
+
+REM These do the same thing
+vault read database/creds/readonly
+curl -H "X-Vault-Token: %VAULT_TOKEN%" -X GET http://localhost:8200/v1/database/creds/readonly

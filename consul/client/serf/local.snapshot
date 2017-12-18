@@ -1,0 +1,120 @@
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-1 192.168.99.101:8301
+alive: host-2 192.168.99.102:8301
+alive: consul-server 192.168.99.100:8301
+clock: 3
+leave
+clock: 4
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-2 192.168.99.102:8301
+alive: consul-server 192.168.99.100:8301
+alive: host-1 192.168.99.101:8301
+clock: 5
+leave
+clock: 6
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul-server 192.168.99.100:8301
+clock: 7
+alive: host-2 192.168.99.102:8301
+alive: host-1 192.168.99.101:8301
+leave
+clock: 8
+alive: BKAO-PC 127.0.0.1:8301
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-2 192.168.99.102:8301
+alive: host-1 192.168.99.101:8301
+alive: consul-server 192.168.99.100:8301
+clock: 9
+leave
+clock: 10
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul-server 192.168.99.100:8301
+clock: 11
+alive: host-1 192.168.99.101:8301
+alive: host-2 192.168.99.102:8301
+leave
+clock: 12
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul-server 192.168.99.100:8301
+alive: host-1 192.168.99.101:8301
+alive: host-2 192.168.99.102:8301
+clock: 13
+leave
+clock: 14
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-2 192.168.99.102:8301
+alive: consul-server 192.168.99.100:8301
+alive: host-1 192.168.99.101:8301
+clock: 15
+leave
+clock: 16
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul-server 192.168.99.100:8301
+alive: host-2 192.168.99.102:8301
+alive: host-1 192.168.99.101:8301
+clock: 17
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-2 192.168.99.102:8301
+clock: 18
+alive: consul-server 192.168.99.100:8301
+alive: host-1 192.168.99.101:8301
+leave
+clock: 19
+alive: BKAO-PC 127.0.0.1:8301
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-1 192.168.99.101:8301
+clock: 20
+alive: host-2 192.168.99.102:8301
+alive: consul-server 192.168.99.100:8301
+leave
+clock: 21
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-2 192.168.99.102:8301
+clock: 22
+alive: host-1 192.168.99.101:8301
+alive: consul-server 192.168.99.100:8301
+leave
+clock: 23
+alive: BKAO-PC 127.0.0.1:8301
+alive: host-1 192.168.99.101:8301
+clock: 24
+alive: host-2 192.168.99.102:8301
+alive: consul-server 192.168.99.100:8301
+leave
+clock: 25
+alive: BKAO-PC 127.0.0.1:8301
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 26
+leave
+clock: 27
+alive: BKAO-PC 127.0.0.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 28
+leave
+clock: 29
+alive: BKAO-PC 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 30
+leave
+clock: 31
+alive: BKAO-PC 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 32
+leave
+clock: 33
+alive: BKAO-PC 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 34
+leave
+clock: 35
+alive: BKAO-PC 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 37
+not-alive: consul1
+leave
+alive: BKAO-PC 172.20.20.1:8301
+alive: consul1 172.20.20.10:8301
+clock: 1
+leave
+clock: 2
