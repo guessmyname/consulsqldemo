@@ -41,13 +41,18 @@ namespace selfregisteringservice
             var uri = new Uri(address);
             _registrationID = $"{_consulConfig.Value.ServiceID}-{uri.Port}";
 
+            var check = new AgentCheckRegistration();
+            check.HTTP = "http://localhost:5000/health";
+            check.Interval = new TimeSpan(0,0,1);
+
             var registration = new AgentServiceRegistration()
             {
                 ID = _registrationID,
                 Name = _consulConfig.Value.ServiceName,
-                Address = $"{uri.Scheme}://{uri.Host}",
+                Address = uri.Host,
                 Port = uri.Port,
-                Tags = _consulConfig.Value.Tags.ToArray()
+                Tags = _consulConfig.Value.Tags.ToArray(),
+                Check = check                                
             };
 
             _logger.LogInformation("Registering in Consul");

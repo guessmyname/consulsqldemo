@@ -19,6 +19,7 @@ namespace selfregisteringservice
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseKestrel().PreferHostingUrls(true)
                 .UseStartup<Startup>()
                 .Build();
     }

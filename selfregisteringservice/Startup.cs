@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Consul;
 using Microsoft.Extensions.Hosting;
+using AspNetCore.Health;
 
 namespace selfregisteringservice
 {
@@ -25,6 +26,10 @@ namespace selfregisteringservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHealthChecks(c=>{
+                c.AddUrlCheck("http://localhost:5000/api/Values");
+            } );
+
             services.AddSingleton<IHostedService, ConsulHostedService>();
            
             services.Configure<ConsulConfig>(Configuration.GetSection("consulConfig"));
@@ -44,6 +49,7 @@ namespace selfregisteringservice
             }
 
             app.UseMvc();
+              app.UseHealthCheck("/health");
         }
     }
 }
