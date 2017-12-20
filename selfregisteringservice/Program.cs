@@ -20,6 +20,7 @@ namespace selfregisteringservice
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseKestrel().PreferHostingUrls(true)
+                .UseHealthChecks("/healthcheck")
                 .UseStartup<Startup>()
                 .Build();
     }

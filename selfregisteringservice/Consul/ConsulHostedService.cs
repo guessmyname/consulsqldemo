@@ -42,7 +42,7 @@ namespace selfregisteringservice
             _registrationID = $"{_consulConfig.Value.ServiceID}-{uri.Port}";
 
             var check = new AgentCheckRegistration();
-            check.HTTP = "http://localhost:5000/health";
+            check.HTTP = $"http://{uri.Host}:{uri.Port}/healthcheck";
             check.Interval = new TimeSpan(0,0,1);
 
             var registration = new AgentServiceRegistration()

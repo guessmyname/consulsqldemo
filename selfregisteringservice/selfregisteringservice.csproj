@@ -3,15 +3,14 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\"/>
+    <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3"/>
-    <PackageReference Include="Consul" Version="0.7.2.3"/>
-    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0"/>
-    <PackageReference Include="AspNetCore.Health" Version="2.0.1"/>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Consul" Version="0.7.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1"/>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 </Project>
